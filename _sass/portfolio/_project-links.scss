@@ -1,0 +1,16 @@
+.project-link{
+    display: inline-block;
+    padding: 0 2px;
+    text-align: right;
+}
+
+.project-link  a{
+    background-image: none;
+    color: inherit;
+}
+
+@media(max-width: $max-mobile-width){
+    .project-link{
+        font-size: 1.5em;
+    }
+}

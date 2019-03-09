@@ -49,6 +49,12 @@ header_pages:
     url: /blog
 
 
+# Collection
+collections:
+  projects:
+    output: true
+    permalink: /portfolio/:title/
+
 # Defaults
 defaults:
   # _posts
@@ -65,4 +71,12 @@ defaults:
       type: pages
     values:
       layout: page
+      basetype: blog
+
+    # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: portfolio
       basetype: blog
