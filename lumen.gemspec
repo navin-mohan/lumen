@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Navin Mohan"]
   spec.email         = ["navinmohan81@gmail.com"]
 
-  spec.summary       = "TODO: Write a short summary, because Rubygems requires one."
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "simple minimal jekyll theme"
+  spec.homepage      = "https://github.com/nvnmo/lumen"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
@@ -16,4 +16,9 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 12.0"
+  spec.add_development_dependency "jekyll-paginate", "~> 1.1.0"
+  spec.add_development_dependency "jekyll-sitemap", "~> 1.2.0"
+  spec.add_development_dependency "jekyll-seo-tag", "~> 1.2.0"
+  spec.add_development_dependency "jemoji", "~> 0.10.2"
+  spec.add_development_dependency "jekyll-feed", "~> 0.11.0"
 end
