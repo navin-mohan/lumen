@@ -11,6 +11,20 @@
         {% endif %}
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% case page.basetype %}
+        {% when 'landingpage' %}
+            {% include landing-page-head.html %}
+        {% when 'portfolio' %}
+            {% include portfolio-head.html %}    
+        {% when 'blog' %}
+            {% include blog-head.html %}            
+    {% endcase %}
+
+    {% include default-head.html %}    
+
+    {% include analytics.html %}        
+
 </head>
 <body>
     {{ content }}  
