@@ -8,8 +8,47 @@ name                     : "John Doe"
 description              : "Portfolio and blog"
 url                      : https://nvnmo.github.io
 baseurl                  :
-
+paginate                 : 5
+paginate_path            : "blog/:num/"
+date_format              : "%b %-d, %Y"
 author: 
   name                   : "John Doe"
   avatar                 : https://api.adorable.io/avatars/209/abott@adorable.png
   bio                    : "Awesome person long bio"
+
+
+
+
+plugins:
+  - jekyll-paginate
+  - jemoji
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+
+# Post sharing icons
+show_sharing_icons: true
+# Change to 'true' to enable individual icons
+share_facebook: true
+share_twitter: true
+share_googleplus: false
+share_linkedin: true
+share_digg: false
+share_tumblr: false
+share_reddit: true
+share_stumbleupon: false
+share_hackernews: false
+
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: blog-post
+      basetype: blog
+      permalink: /blog/:year/:month/:day/:title
