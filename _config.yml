@@ -1,0 +1,15 @@
+
+# Site settings
+
+locale                   : "en-US"
+title                    : "John Doe's Blog"
+title_separator          : "-"
+name                     : "John Doe"
+description              : "Portfolio and blog"
+url                      : https://nvnmo.github.io
+baseurl                  :
+
+author: 
+  name                   : "John Doe"
+  avatar                 : https://api.adorable.io/avatars/209/abott@adorable.png
+  bio                    : "Awesome person long bio"
