@@ -1,6 +1,7 @@
 
 {% for item in site.header_pages %}
     {% assign test_url = page.url | split: "/" | join: "/" %}        
+    <!-- {{ test_url}} == {{ item.url }} -->
     {% if item.url and test_url == item.url %}
         <a class="nav-active" href="{{ item.url | relative_url }}">{{ item.title }}</a>
     {% elsif item.url %}
