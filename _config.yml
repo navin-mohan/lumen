@@ -41,10 +41,12 @@ share_reddit: true
 share_stumbleupon: false
 share_hackernews: false
 
-
-# Pages
+# Header nav
 header_pages:
-  - about.md
+  - title: About
+    url: /about
+  - title: Blog
+    url: /blog
 
 
 # Defaults
