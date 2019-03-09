@@ -42,6 +42,11 @@ share_stumbleupon: false
 share_hackernews: false
 
 
+# Pages
+header_pages:
+  - about.md
+
+
 # Defaults
 defaults:
   # _posts
@@ -52,3 +57,10 @@ defaults:
       layout: blog-post
       basetype: blog
       permalink: /blog/:year/:month/:day/:title
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+      basetype: blog
