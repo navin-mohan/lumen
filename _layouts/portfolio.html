@@ -5,8 +5,8 @@ layout: blog-default
 <h1 class="center portfolio-title">Projects</h1>
 
 <div class="portfolio-list-container">
-    
-    {% for item in site.projects %}
+    {% assign sorted_projects = site.projects | sort: "order" %}
+    {% for item in sorted_projects %}
         <div class="portfolio-list-item">
             <div class="portfolio-list-item-title">
                 <h3>
